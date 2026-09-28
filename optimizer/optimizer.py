@@ -1,22 +1,25 @@
+# Optimizer.py
+# Author(s) - Aryan Patil
+
+
+# Import Necessary Python Libraries
 import random
 import math
 import matplotlib.pyplot as plt
 
-# 1. Setup lists to save the data of planes that successfully fly
+# Setup lists to save the data of planes that successfully fly
 speeds = []
 ranges = []
 
-print("Simulating 50,000 random RC planes... please wait.")
-
-# 2. Start a giant loop to guess 50,000 different planes
+# Start a giant loop to guess 50,000 different planes
 for i in range(50000):
-    
-    # --- A. GUESS RANDOM VARIABLES ---
-    # Pick a random number between a minimum and maximum limit
+
+    # Variables - These are the parameters that need to be tested to find the best plane design
+
     S = random.uniform(0.2, 0.8)             # Wing Area (m^2)
     AR = random.uniform(4.0, 15.0)           # Aspect Ratio
     C_batt_Ah = random.uniform(2.0, 10.0)    # Battery Capacity (Ah)
-    P_motor_max = random.uniform(200, 1500)  # Motor Power (Watts)
+    P_motor_max = random.uniform(1000, 3000)  # Motor Power (Watts)
 
     # --- B. CONSTANTS ---
     rho = 1.225         # Air density
