@@ -43,7 +43,7 @@ Do not make propulsion changes directly on `main`.
 Before beginning work:
 
 1. Pull the latest version of `main`.
-2. Create a new branch for your task.
+2. Create a new branch for your task from the branch manager.
 3. Make and save your changes.
 4. Commit the changes to your branch.
 5. Push the branch to GitHub.
